@@ -1,0 +1,100 @@
+$ git init - initializing git.
+
+$ls -list the files.
+
+$ git status
+
+untracked 
+ staged
+unmodified
+ modified
+untracked
+
+$ git add index.html(Pressing tab autocompletes)
+
+$ git status
+
+$ git commit. - to track any changes in our file we need to make commits first and 
+                this is called initial commit.
+
+ now after using git commit command a vim editor opens.
+here first type i then it will start taking input.
+Then write : - Initial Commit.
+To exit, press : "esc : wq"
+
+When on pressing $git status, it says 
+ "On branch master nothing to commit,working tree clean". 
+It means that all commit have been successfully commited and hence we can work freely.
+
+$ touch about.html - "touch" commands creates empty files.
+
+$ git add -A --> use to push all the files in staging area at once.
+
+$ git commit -m "my message here" - this is used to commit a file while skipping the vim 
+                                    editor part.
+$ clear --> clear the terminal area.
+
+ ctrl + "+" & ctrl + '-' for increasing and decreasing the size of the text.
+
+$ git checkout contact.html - helps in recovering a file from the staging area on our desktop.
+
+$ git checkout -f --> helps in matching all the files on our pc with the last commited files.
+
+$ git log - gives all our activity within the git system.
+
+$ git log -p -2 --> gives us last 2 changes in our git system and tells us 
+                    what those changes were.
+
+$ git diff --> compares the changes in the working tree with the last commit of our file.
+
+$ git commit -a -m^C --> '^C' is used to cancel commands  
+
+$ git rm --> It deletes the file and removes from git directory as well as staging area.
+
+$ git rm --cached --> It just removes the file from staging area .i.e makes it 
+                      untracked.
+
+$ git status -s --> gives short status of the changes in the working tree and staging area.
+  
+$ touch .gitignore --> helps in ignoring certain files.
+
+$ touch mylogs.log --> creates log files. 
+
+ In .gitignore : /mylogs.log
+                 *.log
+                 *.cpp
+$git branch feature1  // feature1 = branch name
+
+$git checkout feature1
+// Switched to branch 'feature1'
+
+$git status
+// output : non branch feature1 
+// nothing to commit, working tree clean
+
+note : master is the main branch
+
+$git checkout master  ---> switches instantly to master branch
+
+$git merge feature1  ---> merges one branch with master branch
+
+$git branch ---> tells us about which branch we are in
+
+$git checkout -b flaskintegration ----> creates a branch named 'flaskintegration' and instantly switches to it.
+
+Github : hosting service for git repositories
+
+$git remote
+//origin
+
+$git remote -v
+
+$git push origin master
+
+github -> settings -> ssh GPG keys
+
+$git set-url origin git@github.com : CodewithHarrt/Git-In-One-Video.git
+
+$git push -u Origin master
+
+ 
